@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-public class testNioCopy {
+public class TestNioCopy {
     public static void main(String[] args) throws IOException {
         long startTime = System.currentTimeMillis();
         //long startTime = System.nanoTime();
