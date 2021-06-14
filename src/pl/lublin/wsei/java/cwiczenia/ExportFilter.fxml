@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lublin.wsei.java.cwiczenia.ExportFilter">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="30.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+
+    <children>
+        <Label layoutX="33.0" layoutY="30.0" prefHeight="34.0" prefWidth="43.0" text="Rok" GridPane.rowIndex="0" />
+        <TextField fx:id="txtRok" layoutX="102.0" layoutY="37.0" prefHeight="34.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+        <Label layoutX="33.0" layoutY="87.0" prefHeight="34.0" prefWidth="43.0" text="Kraj" GridPane.rowIndex="1" />
+        <TextField fx:id="txtKraj" layoutX="102.0" layoutY="93.0" prefHeight="34.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></TextField>
+        <Label layoutX="33.0" layoutY="150.0" prefHeight="34.0" prefWidth="72.0" text="Dziedzina" GridPane.rowIndex="2" />
+        <TextField fx:id="txtDziedzina" layoutX="102.0" layoutY="150.0" prefHeight="34.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+        <Button layoutX="277.0" layoutY="224.0" mnemonicParsing="false" onAction="#Save" prefHeight="26.0" prefWidth="72.0" text="Zapisz" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label fx:id="lblWynik" layoutX="173.0" layoutY="260.0" prefHeight="26.0" prefWidth="174.0" textFill="#80431a"
+               GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    </children>
+</GridPane>
